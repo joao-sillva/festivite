@@ -1,0 +1,37 @@
+.zone-wrapper {
+  margin-left: 7.2rem;
+
+  & .dropzone {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  
+    & .zone {
+      display: flex;
+      position: relative;
+      align-items: center;
+      gap: .8rem;
+    
+      background: var(--shape-button);
+      border-radius: .8rem;
+      margin-top: 1.6rem;
+      padding: .4rem 1.2rem;
+      height: 4rem;
+      
+      & input {
+        position: absolute;
+        opacity: 0;
+      }
+
+      &:hover,
+      &:focus {
+        outline: 2px solid var(--brand-light);
+      }
+    }
+
+    & .text {
+      color: var(--input-placeholder);
+      margin-top: 1.6rem;
+    }
+  }
+}
