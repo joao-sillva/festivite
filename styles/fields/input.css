@@ -44,3 +44,18 @@ input[type="time"] {
     background: none;
   }
 }
+
+input {
+  &:invalid {
+    outline: 1px solid var(--danger);
+  }
+
+  &[required] + .error {
+    font: var(--body-sm);
+    color: var(--danger);
+  }
+
+  &:not(:focus):valid + .error {
+    display: none;
+  }
+}
