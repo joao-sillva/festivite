@@ -1,0 +1,46 @@
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 1.3rem 1.6rem;
+
+  font: var(--body-md);
+  background: var(--input-base);
+  color: var(--input-placeholder);
+  border: 1px solid var(--input-stroke);
+  border-radius: .8rem;
+  
+  appearance: none;
+  margin-top: 1.2rem;
+}
+
+textarea {
+  resize: none;
+}
+
+label {
+  font: var(--body-sm);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 1px solid var(--brand-light);
+}
+
+input[type="time"] {
+  display: flex;
+  appearance: none;
+  align-items: center;
+  gap: 1rem;
+
+  &::before {
+    content: 'DD/MM/AAAA,';
+    font: var(--body-md);
+    color: var(--input-placeholder);
+  }
+
+  &::-webkit-calendar-picker-indicator {
+    background: none;
+  }
+}
