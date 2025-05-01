@@ -3,3 +3,67 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --brand-light: #59B2FF;
+  --brand-mid: #3487CF;
+  --brand-dark: #1D6FB6;
+
+  --purple: #B259FF;
+  --fuschia: #FF59F9;
+  --pink: #FF598B;
+  --orange: #FF8B59;
+  --yellow: #FFCD59;
+  --lime: #E1FF59;
+  --green: #59FF91;
+  --cyan: #59FFF9;
+  --navy: #6A59FF;
+  --danger: #FF5959;
+
+  --input-base: #1C1F21;
+  --input-stroke: #363B40;
+  --input-placeholder: #869198;
+
+  --shape-background: #131516;
+  --shape-body: #212427;
+  --shape-button: #2D3136;
+  --shape-hover: #383D42;
+
+  --text-body: #C8CDD0;
+  --text-heading: #F9F9F9;
+ 
+  font-size: 62.5%;
+
+  --leckerli-one: "Leckerli One", sans-serif;
+  --logo: 400 4rem var(--leckerli-one); 
+  
+  --baloo-2: "Baloo 2", sans-serif;
+  --heading-md: 600 2.8rem var(--baloo-2);
+  --heading-sm: 600 1.8rem var(--baloo-2);
+  
+  --open-sans: "Open Sans", sans-serif;
+  --body-md: 500 1.6rem var(--open-sans);
+  --body-sm: 500 1.4rem var(--open-sans);
+  --body-xs: 500 1.2rem var(--open-sans);
+}
+
+body {
+  background: var(--shape-background);
+  color: var(--text-body);
+  font: var(--body-md);
+  overflow: hidden;
+}
+
+h1 {
+  color: var(--pink);
+}
+
+h2,
+h3 {
+ color: var(--text-heading); 
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
