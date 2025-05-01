@@ -1,0 +1,45 @@
+#app {
+  height: 100vh;
+  padding: 2rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 40% 60%;
+  overflow: hidden;
+}
+
+aside {
+  padding: 3.2rem;
+  background: url(../assets/illustration.svg) no-repeat center center/cover;
+  border-radius: 1.2rem;
+
+  & .aside-container {
+    max-width: 40rem;
+
+    & header > img {
+      width: 4.5rem;
+      margin-bottom: 1.6rem;
+    }
+
+    & h1 {
+      font: var(--logo);
+      margin-bottom: 0.4rem;
+    }
+
+    & p {
+      font: 300 1.6rem var(--open-sans);
+      color: var(--text-body);
+    }
+  }
+}
+
+main {
+  background: var(--shape-body);
+  border-radius: 1.2rem;
+  padding: 8rem;
+  margin-right: 2rem;
+  overflow: auto;
+
+  & .main-container {
+    margin-right: auto;
+  }
+}
