@@ -43,3 +43,15 @@ main {
     margin-right: auto;
   }
 }
+
+.line {
+  width: 100%;
+  height: 1px;
+  background: var(--shape-button);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
