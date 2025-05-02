@@ -1,0 +1,10 @@
+.toggle-mode {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-top: 2rem;
+
+  & label {
+    color: var(--text-heading);
+  }
+}
