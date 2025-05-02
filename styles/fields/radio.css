@@ -34,3 +34,117 @@
     }
   }
 }
+
+.radio-color {
+  font: var(--body-sm);
+  color: var(--text-body);
+
+  & .color-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(2.5rem, 1fr));
+
+    & .color-inner input[type="radio"] {
+      appearance: none;
+      width: 2.5rem;
+      border-radius: 50%;
+      border: .375rem solid var(--shape-button);
+    }
+    
+    & .color-inner input[id="brand"] {
+      background: var(--brand-light);
+    }
+  
+    & .color-inner input[id="navy"] {
+      background: var(--navy);
+    }
+  
+    & .color-inner input[id="purple"] {
+      background: var(--purple);
+    }
+  
+    & .color-inner input[id="fuschia"] {
+      background: var(--fuschia);
+    }
+  
+    & .color-inner input[id="pink"] {
+      background: var(--pink);
+    }
+  
+    & .color-inner input[id="danger"] {
+      background: var(--danger);
+    }
+  
+    & .color-inner input[id="orange"] {
+      background: var(--orange);
+    }
+  
+    & .color-inner input[id="yellow"] {
+      background: var(--yellow);
+    }
+  
+    & .color-inner input[id="lime"] {
+      background: var(--lime);
+    }
+  
+    & .color-inner input[id="green"] {
+      background: var(--green);
+    }
+  
+    & .color-inner input[id="cyan"] {
+      background: var(--cyan);
+    }
+  }
+}
+
+.theme-wrapper {
+  font: var(--body-sm);
+  color: var(--text-body);
+  margin-block: 1.8rem;
+
+  & .theme-options {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .8rem;
+    margin-top: 1.6rem;
+
+    & .theme-inner {
+      position: relative;
+      display: grid;
+      justify-items: center;
+
+      background: var(--shape-button);
+      border: 1px solid var(--shape-button);
+      border-radius: .8rem;
+      padding: .4rem;
+
+      & img {
+        margin-bottom: .8rem;
+        border-radius: .4rem;
+        width: 100%;
+      }
+
+      & p {
+        margin-bottom: .8rem;
+      }
+
+      &:hover,
+      &:focus {
+        outline: 2px solid var(--brand-light);
+      }
+
+      & input,
+      & input:hover,
+      & input:focus {
+        all: unset;
+        position: absolute;
+        inset: 0;
+      }
+
+      & input[type="radio"]:checked {
+        outline: 2px solid var(--brand-light);
+        border-radius: .4rem;
+      }
+    }
+  }
+}
