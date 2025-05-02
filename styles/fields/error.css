@@ -1,0 +1,11 @@
+.error {
+  display: flex;
+  align-items: center;
+  margin-top: .8rem;
+  gap: .8rem;
+  
+  & small {
+    font: var(--body-sm);
+    color: var(--danger);
+  }
+}
