@@ -148,3 +148,13 @@
     }
   }
 }
+
+@media (width <= 70em) {
+  & .radio-color {
+    overflow-x: scroll;
+  }
+
+  & .theme-wrapper .theme-options {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -23,3 +23,9 @@ legend {
     font: var(--heading-sm);
   }
 }
+
+@media (width <= 70em) {
+  & form {
+    gap: 1.2rem;
+  }
+}

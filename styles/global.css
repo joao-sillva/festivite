@@ -80,3 +80,20 @@ img {
 .flex-2 {
   flex: 1;
 }
+
+@media (width <= 70em) {
+  :root {
+    --logo: 400 2.5rem var(--leckerli-one); 
+  
+    --heading-md: 600 1.8rem var(--baloo-2);
+    --heading-sm: 600 1.6rem var(--baloo-2);
+    
+    --body-md: 500 1.4rem var(--open-sans);
+    --body-sm: 500 1.2rem var(--open-sans);
+    --body-xs: 500 1rem var(--open-sans);
+  }
+   
+  .flex {
+    flex-direction: column;
+  }
+}
